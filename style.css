@@ -1,0 +1,18 @@
+body {
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+
+#shoveItDown {
+  position: absolute;
+  top: 90%;
+}
+
+#canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  opacity: 0.85;
+}
