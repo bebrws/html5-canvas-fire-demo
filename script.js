@@ -1,3 +1,7 @@
+// Color pallete code from: view-source:https://jstsch.com/code/canvas_fire/index.html
+// Fire demo idea and algo from : https://lodev.org/cgtutor/fire.html
+
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
