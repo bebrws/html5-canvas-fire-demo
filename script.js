@@ -4,8 +4,11 @@ function getRandomInt(max) {
 
 
 
-var canvas = document.querySelector('#canvas-overlay');
-var canvasContext = canvas.getContext('2d');
+let canvas = document.querySelector('#canvas-overlay');
+let canvasContext = canvas.getContext('2d');
+
+let arr  = new Uint8ClampedArray(4 * canvas.width * canvas.height);
+let fire = new Uint8ClampedArray(canvas.width * canvas.height);
 
 function init() {
   window.addEventListener('resize', resizeCanvases);
@@ -18,11 +21,9 @@ function resizeCanvases() {
   canvas.width = canvas.width = window.innerWidth;
   canvas.height = canvas.height = window.innerHeight;
 
+  arr  = new Uint8ClampedArray(4 * canvas.width * canvas.height);
+  fire = new Uint8ClampedArray(canvas.width * canvas.height);
 }
-
-
-const arr  = new Uint8ClampedArray(4 * canvas.width * canvas.height);
-const fire = new Uint8ClampedArray(canvas.width * canvas.height);
 
         
 var colors = [];
